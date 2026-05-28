@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors - Professional & Clean -->
+    <color name="brand_blue">#2563EB</color>
+    <color name="brand_blue_light">#DBEAFE</color>
+    <color name="brand_blue_dark">#1E40AF</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#10B981</color>
+    <color name="success_green_bg">#D1FAE5</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="warning_orange_bg">#FEF3C7</color>
+    <color name="danger_red">#EF4444</color>
+    <color name="danger_red_bg">#FEE2E2</color>
+    <color name="storage_blue">#3B82F6</color>
+    <color name="storage_blue_bg">#DBEAFE</color>
+
+    <!-- Basic White Light Mode -->
+    <color name="bg_primary">#FFFFFF</color>
+    <color name="surface_glass">#F8FAFC</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="border_light">#E2E8F0</color>
+    
+    <color name="nav_active">#2563EB</color>
+    <color name="nav_inactive">#64748B</color>
+    <color name="nav_tint">@color/selector_nav_tint</color>
+</resources>

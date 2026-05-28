@@ -1,0 +1,260 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Drag handle -->
+        <View
+            android:id="@+id/dragHandle"
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:background="#E5E7EB"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Device name -->
+        <TextView
+            android:id="@+id/tvDetailTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Device Name"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/dragHandle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/statusBadge" />
+
+        <!-- SN subtitle -->
+        <TextView
+            android:id="@+id/tvDetailSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SN: N/A"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/statusBadge" />
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/statusBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ONLINE"
+            android:textColor="@color/success_green"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-black"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/bg_status_badge_online"
+            app:layout_constraintTop_toTopOf="@id/tvDetailTitle"
+            app:layout_constraintBottom_toBottomOf="@id/tvDetailSubtitle"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Current Usage Row (CPU / RAM / DISK) -->
+        <LinearLayout
+            android:id="@+id/avgUsageRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailSubtitle">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_light"
+                app:cardBackgroundColor="@color/surface_glass">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CPU"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="9sp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.1" />
+                    <TextView
+                        android:id="@+id/tvAvgCpu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_light"
+                app:cardBackgroundColor="@color/surface_glass">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RAM"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="9sp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.1" />
+                    <TextView
+                        android:id="@+id/tvAvgRam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/border_light"
+                app:cardBackgroundColor="@color/surface_glass">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DISK"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="9sp"
+                        android:fontFamily="sans-serif-black"
+                        android:letterSpacing="0.1" />
+                    <TextView
+                        android:id="@+id/tvAvgDisk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Section: Real-time Performance (24 jam) -->
+        <TextView
+            android:id="@+id/chartLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERFORMA 24 JAM TERAKHIR"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/avgUsageRow"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Loading indicator untuk chart -->
+        <ProgressBar
+            android:id="@+id/chartProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/chartLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/usageChart"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/chartLabel" />
+
+        <!-- Section: Log Status Online/Offline -->
+        <TextView
+            android:id="@+id/logLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG STATUS PERANGKAT"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/usageChart"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Empty state log -->
+        <TextView
+            android:id="@+id/tvLogEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidak ada perubahan status dalam 24 jam terakhir"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:paddingVertical="16dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/logLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- RecyclerView log — non-scrollable, nested di NestedScrollView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvStatusLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/logLabel" />
+
+        <!-- Tombol Selesai -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Selesai"
+            android:layout_marginTop="24dp"
+            app:cornerRadius="16dp"
+            android:backgroundTint="@color/brand_blue"
+            app:layout_constraintTop_toBottomOf="@id/rvStatusLog"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

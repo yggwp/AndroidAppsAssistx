@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/layout_section_header.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/layout_section_header.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/fragment_alerts.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_alerts.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/fragment_settings.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/fragment_dashboard.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/fragment_history.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_history.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/activity_main.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/card_history_item.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_history_item.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/layout_device_detail.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/layout_device_detail.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/card_device.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_device.xml"
+    },
+    {
+        "merged": "com.assistx.monitor.app-mergeDebugResources-60:/layout/item_status_log.xml",
+        "source": "com.assistx.monitor.app-main-56:/layout/item_status_log.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/card_alert_item.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_alert_item.xml"
+    },
+    {
+        "merged": "com.assistx.monitor.app-mergeDebugResources-60:/layout/layout_device_detail.xml",
+        "source": "com.assistx.monitor.app-main-56:/layout/layout_device_detail.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/fragment_projects.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_projects.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/activity_alert_popup.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/activity_alert_popup.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-mergeDebugResources-60:/layout/card_project.xml",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_project.xml"
+    }
+]

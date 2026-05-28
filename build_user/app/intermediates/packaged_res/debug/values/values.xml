@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_primary">#FFFFFF</color>
+    <color name="border_light">#E2E8F0</color>
+    <color name="brand_blue">#2563EB</color>
+    <color name="brand_blue_dark">#1E40AF</color>
+    <color name="brand_blue_light">#DBEAFE</color>
+    <color name="danger_red">#EF4444</color>
+    <color name="danger_red_bg">#FEE2E2</color>
+    <color name="nav_active">#2563EB</color>
+    <color name="nav_inactive">#64748B</color>
+    <color name="nav_tint">@color/selector_nav_tint</color>
+    <color name="storage_blue">#3B82F6</color>
+    <color name="storage_blue_bg">#DBEAFE</color>
+    <color name="success_green">#10B981</color>
+    <color name="success_green_bg">#D1FAE5</color>
+    <color name="surface_glass">#F8FAFC</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="warning_orange_bg">#FEF3C7</color>
+    <string name="all_clear">✅ Semua perangkat aman!</string>
+    <string name="app_name">AssistX Monitor</string>
+    <string name="filter_alerts">Peringatan</string>
+    <string name="filter_all">Semua</string>
+    <string name="filter_offline">Offline</string>
+    <string name="filter_online">Online</string>
+    <string name="no_devices">Belum ada perangkat. Tambahkan dari dashboard web.</string>
+    <string name="search_hint">Cari berdasarkan nama, IP, lokasi…</string>
+    <string name="service_notification_text">Memantau semua perangkat POC 24/7</string>
+    <string name="service_notification_title">AssistX Monitoring</string>
+    <string name="title_alerts">Notifikasi</string>
+    <string name="title_dashboard">Beranda</string>
+    <string name="title_history">Aktivitas</string>
+    <string name="title_settings">Pengaturan</string>
+    <style name="Theme.AssistXMonitor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSurface">@color/surface_glass</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/bg_primary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+    </style>
+    <style name="Theme.AssistXMonitor.Dark" parent="Theme.AssistXMonitor"/>
+    <style name="Theme.AssistXMonitor.Popup" parent="Theme.Material3.Dark">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

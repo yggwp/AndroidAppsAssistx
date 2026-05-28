@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Dark Mode Colors -->
+    <color name="brand_blue">#818CF8</color>
+    <color name="brand_blue_light">#312E81</color>
+    <color name="brand_blue_dark">#C7D2FE</color>
+
+    <!-- Status Colors (Dark mode adjusted) -->
+    <color name="success_green">#4ADE80</color>
+    <color name="success_green_bg">#064E3B</color>
+    <color name="warning_orange">#FB923C</color>
+    <color name="warning_orange_bg">#7C2D12</color>
+    <color name="danger_red">#F87171</color>
+    <color name="danger_red_bg">#7F1D1D</color>
+    <color name="storage_blue">#60A5FA</color>
+    <color name="storage_blue_bg">#1E3A8A</color>
+
+    <!-- Deep Navy Dark Mode -->
+    <color name="bg_primary">#0F172A</color>
+    <color name="surface_glass">#1E293B</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_muted">#64748B</color>
+    <color name="border_light">#334155</color>
+    
+    <color name="nav_active">#818CF8</color>
+    <color name="nav_inactive">#94A3B8</color>
+</resources>

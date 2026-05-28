@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/surface_glass"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/border_light"
+    app:contentPadding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header: Project Name & Status -->
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Project Name"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/statusLayout" />
+
+        <TextView
+            android:id="@+id/tvNodesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Nodes • 0 Online"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            app:layout_constraintTop_toBottomOf="@id/tvProjectName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@id/tvProjectName"
+            app:layout_constraintEnd_toEndOf="parent">
+            <View
+                android:id="@+id/statusIndicator"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/circle_online"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/statusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL ONLINE"
+                android:textColor="@color/success_green"
+                android:textSize="10sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:background="@drawable/bg_status_badge_online" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_light"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tvNodesCount" />
+
+        <!-- Resource Metrics Section -->
+        <LinearLayout
+            android:id="@+id/resourceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/divider1">
+
+            <!-- Avg CPU -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Avg CPU Usage"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/tvAvgCpuText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/text_primary"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/pbAvgCpu"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginBottom="12dp"
+                android:progressTint="@color/success_green" />
+
+            <!-- Avg RAM -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Avg RAM Usage"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/tvAvgRamText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/text_primary"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/pbAvgRam"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:progressTint="@color/warning_orange" />
+        </LinearLayout>
+
+        <!-- Divider 2 -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_light"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/resourceLayout" />
+
+        <!-- Total Quota Info -->
+        <LinearLayout
+            android:id="@+id/quotaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/divider2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Project Quota"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-black" />
+            <TextView
+                android:id="@+id/tvTotalQuotaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 GB"
+                android:textColor="@color/brand_blue"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-black" />
+        </LinearLayout>
+
+        <!-- Individual PC Quota List Title -->
+        <TextView
+            android:id="@+id/tvPcQuotaTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PC QUOTA USAGE"
+            android:textColor="@color/text_muted"
+            android:textSize="9sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/quotaLayout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Dynamic PC List Container -->
+        <LinearLayout
+            android:id="@+id/layoutPcList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="6dp"
+            app:layout_constraintTop_toBottomOf="@id/tvPcQuotaTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

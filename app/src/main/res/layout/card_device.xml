@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/surface_glass"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/border_light"
+    app:contentPadding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header: Name & Status -->
+        <TextView
+            android:id="@+id/tvDeviceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Device Name"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/statusLayout" />
+
+        <TextView
+            android:id="@+id/tvProjectUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Alpha • Unit 01"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            app:layout_constraintTop_toBottomOf="@id/tvDeviceName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@id/tvDeviceName"
+            app:layout_constraintEnd_toEndOf="parent">
+            <View
+                android:id="@+id/statusIndicator"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/circle_online"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:id="@+id/statusBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ONLINE"
+                android:textColor="@color/success_green"
+                android:textSize="10sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:background="@drawable/bg_status_badge_online" />
+        </LinearLayout>
+
+        <!-- Technical Grid -->
+        <GridLayout
+            android:id="@+id/techGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvProjectUnit">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_wifi"
+                    app:tint="@color/text_muted"
+                    android:layout_marginEnd="6dp" />
+                <TextView
+                    android:id="@+id/tvIpAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10.8.0.12"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_monitor"
+                    app:tint="@color/text_muted"
+                    android:layout_marginEnd="6dp" />
+                <TextView
+                    android:id="@+id/tvAnyDeskId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 456 789"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_map_pin"
+                    app:tint="@color/text_muted"
+                    android:layout_marginEnd="6dp" />
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jakarta"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnWhatsApp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true">
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/brand_blue"
+                    android:layout_marginEnd="6dp" />
+                <TextView
+                    android:id="@+id/tvSimcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:textColor="@color/brand_blue"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/border_light"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/techGrid" />
+
+        <!-- Metrics Section -->
+        <LinearLayout
+            android:id="@+id/metricsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+                <TextView
+                    android:id="@+id/quotaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuota: 2.5 GB"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-medium" />
+                <ProgressBar
+                    android:id="@+id/quotaProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:progressTint="@color/brand_blue" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:id="@+id/cpuText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CPU 45%"
+                    android:textColor="@color/text_muted"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/memText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RAM 60%"
+                    android:textColor="@color/text_muted"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/storageText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DISK 80%"
+                    android:textColor="@color/text_muted"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/cpuProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:progressTint="@color/success_green" />
+                <ProgressBar
+                    android:id="@+id/memProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:progressTint="@color/warning_orange" />
+                <ProgressBar
+                    android:id="@+id/storageProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:progressTint="@color/storage_blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/danger_red"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/metricsLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

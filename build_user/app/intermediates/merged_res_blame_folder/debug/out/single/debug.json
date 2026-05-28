@@ -1,0 +1,206 @@
+[
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_copy.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_search.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_warning.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_warning.xml"
+    },
+    {
+        "merged": "com.assistx.monitor.app-merged_res-61:/layout_item_status_log.xml.flat",
+        "source": "com.assistx.monitor.app-main-56:/layout/item_status_log.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_activity_main.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_map_pin.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_map_pin.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_monitor.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_monitor.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_dashboard.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_dashboard.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_status_badge.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_status_badge.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_input.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_btn_secondary.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_btn_secondary.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_status_badge_alert.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_status_badge_alert.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_circle_offline.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/circle_offline.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_wifi.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_wifi.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_settings.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_fragment_projects.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_projects.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_popup.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_popup.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_activity_alert_popup.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/activity_alert_popup.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_card_alert_item.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_alert_item.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_circle_button.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_circle_button.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_moon.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_moon.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_circle_online.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/circle_online.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/navigation_nav_graph.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_layout_section_header.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/layout_section_header.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.assistx.monitor.app-merged_res-61:/layout_layout_device_detail.xml.flat",
+        "source": "com.assistx.monitor.app-main-56:/layout/layout_device_detail.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_status_badge_online.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_status_badge_online.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_sync.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_sync.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_fragment_settings.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_projects.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_projects.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_btn_primary.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_btn_primary.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_history.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_history.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_fragment_alerts.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_alerts.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_bottom_sheet.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_bottom_sheet.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_card_history_item.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_history_item.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_card_project.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_project.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/color_selector_nav_tint.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/color/selector_nav_tint.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_whatsapp.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_whatsapp.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_phone.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_phone.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_alerts.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_alerts.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_x_logo.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_x_logo.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_person.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_fragment_dashboard.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_fragment_history.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/fragment_history.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_alert.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_alert.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_bg_status_badge_offline.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/bg_status_badge_offline.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/xml_network_security_config.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_layout_device_detail.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/layout_device_detail.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/layout_card_device.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/layout/card_device.xml"
+    },
+    {
+        "merged": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-merged_res-61:/drawable_ic_check.xml.flat",
+        "source": "/home/assistx/.gradle/daemon/8.4/com.assistx.monitor.app-main-56:/drawable/ic_check.xml"
+    }
+]

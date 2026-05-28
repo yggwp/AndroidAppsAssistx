@@ -1,0 +1,92 @@
+We are asked to apply a suggested edit to the original code. The original code is described as a run-name that adds env with ANDROID_HOME, changes the run to a multi-line script that checks ANDROID_HOME and ANDROID_SDK_ROOT and writes local.properties, also adds a conditional if: success() to the Upload step. The suggested edit is a complete YAML file. We need to output the complete modified file. Since the original code is not provided directly but only described, and the suggested edit is given as a full file, we'll assume that the suggested edit is the complete new content. The instruction says: "Apply the SUGGESTED EDIT to the ORIGINAL CODE. Output the complete modified file." So we need to output the YAML content that incorporates the changes. Since the suggested edit is a full file, that will be the output. However, we must ensure that the output is only code, no explanation. So I'll output the YAML content exactly as given in the suggested edit. But note the suggested edit is inside a JSON-like structure: a tool call with arguments. The actual changes field contains the full YAML. I'll extract the YAML and output it.```yaml
+name: Build APK
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build Debug APK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          if [ -n "$ANDROID_HOME" ]; then
+            echo "sdk.dir=$ANDROID_HOME" > local.properties
+          elif [ -n "$ANDROID_SDK_ROOT" ]; then
+            echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+          fi
+          ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Upload Debug APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: assistx-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+
+ORIGINAL CODE:
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
+      - name: Build Debug APK
+        env:
+          ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          if [ -n "$ANDROID_HOME" ]; then
+            echo "sdk.dir=$ANDROID_HOME" > local.properties
+          elif [ -n "$ANDROID_SDK_ROOT" ]; then
+            echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+          fi
+          cat local.properties 2>/dev/null || true
+          ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Upload Debug APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: assistx-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+
